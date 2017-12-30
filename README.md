@@ -9,3 +9,4 @@ Some cheatsheets to help me keep track of what stuff means, and how to get mysel
 * [node](node.md)
 * [express](express.md)
 * [django](django.md)
+* [postgresql](postgresql.md)
