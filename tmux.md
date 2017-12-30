@@ -15,7 +15,7 @@ I also find it befuddling to understand in other guides that `C-b` means holding
 * `ctrl+b, then b or n` - `b` is for back, `n` is for next tmux window.
 * `ctrl+b, then d` - Detach from the current tmux session, leaving it running in the background. Back at the command line, use `tmux ls` to list the current tmux sessions. Use the first number on the line as the tmux session number. Let's say you see `4: 2 windows (created Sat Dec 30 14:12:50 2017) [130x16]`, then you'd run `tmux attach-session -t 4` to resume/re-attach to that one. Or you can resume the last-opened tmux session with `tmux a`.
 
-References:
+## References:
 
 1. ["A Gentle Introduction to tmux"](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340)
 1. ["A Quick and Easy Guide to tmux"](http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
