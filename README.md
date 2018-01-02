@@ -11,3 +11,4 @@ Some cheatsheets to help me keep track of what stuff means, and how to get mysel
 * [django](django.md)
 * [postgresql](postgresql.md)
 * [Ubuntu](ubuntu.md)
+* [nginx](nginx.md)
