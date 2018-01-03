@@ -9,14 +9,15 @@ line 2
 EOT
 ```
 
+## GNU coreutils - the swiss army knife of the shell
+
 You can do a lot of calculations on text in files, and the text input and output of programs, without writing a script, using the GNU coreutils. Some useful ones:
 
 1. `wc` - Does a Word Count, in some interpretations.
 2. `cut` - Cuts a text string based on delimiters or specific character indexes.
 3. `head` - Gets the first lines of a file, based on offset from the start or end of the file.
-4. 
 
-To get the number of lines in a file `1929/032620-99999-1929.op` (a weather station's data for 1929):
+### To get the number of lines in a file `1929/032620-99999-1929.op` (a weather station's data for 1929):
 
 ```bash
 wc -l 1929/032620-99999-1929.op
@@ -28,7 +29,7 @@ With output:
 92 1929/032620-99999-1929.op
 ```
 
-To get the number of files in a folder `1929`:
+### To get the number of files in a folder `1929`:
 
 ```bash
 ls -1 1929 | wc -l
@@ -72,7 +73,7 @@ Would have output:
 990061-99999-1929.op
 ```
 
-To get the line counts for each one of the files:
+### To get the line counts for each one of the files:
 
 ```bash
 wc -l 1929/*.op
@@ -105,7 +106,7 @@ With output:
   2081 total
 ```
 
-To get rid of this last line:
+### To get rid of this last line:
 
 ```bash
 wc -l 1929/*.op | head --lines=-1
@@ -137,7 +138,7 @@ With output:
     44 1929/990061-99999-1929.op
 ```
 
-To get just the numbers representing the counts of lines:
+### To get just the numbers representing the counts of lines:
 
 ```bash
 wc -l 1929/*.op | head --lines=-1 | cut -c 1-6
@@ -169,7 +170,7 @@ With output:
     44
 ```
 
-To get the minimum number of lines per file, maximum, median, and mean, you can rely on a small bit of R script. Create a file `summary.r` with the following contents:
+### To get the minimum number of lines per file, maximum, median, and mean, you can rely on a small bit of R script. Create a file `summary.r` with the following contents:
 
 ```rscript
 #! /usr/bin/env Rscript
