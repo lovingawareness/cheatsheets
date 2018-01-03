@@ -16,11 +16,12 @@ You can do a lot of calculations on text in files, and the text input and output
 1. `wc` - Does a Word Count, in some interpretations.
 2. `cut` - Cuts a text string based on delimiters or specific character indexes.
 3. `head` - Gets the first lines of a file, based on offset from the start or end of the file.
+4. `sed` - Stream Editor, you can use regular expressions on lines of text.
 
 ### To get the number of lines in a file `1929/032620-99999-1929.op` (a weather station's data for 1929):
 
 ```bash
-wc -l 1929/032620-99999-1929.op
+wc --lines 1929/032620-99999-1929.op
 ```
 
 With output:
@@ -32,7 +33,7 @@ With output:
 ### To get the number of files in a folder `1929`:
 
 ```bash
-ls -1 1929 | wc -l
+ls -1 1929 | wc --lines
 ```
 
 With output:
@@ -76,7 +77,7 @@ Would have output:
 ### To get the line counts for each one of the files:
 
 ```bash
-wc -l 1929/*.op
+wc --lines 1929/*.op
 ```
 
 With output:
@@ -109,7 +110,7 @@ With output:
 ### To get rid of this last line:
 
 ```bash
-wc -l 1929/*.op | head --lines=-1
+wc --lines 1929/*.op | head --lines=-1
 ```
 
 With output:
@@ -137,37 +138,68 @@ With output:
     90 1929/039800-99999-1929.op
     44 1929/990061-99999-1929.op
 ```
-
-### To get just the numbers representing the counts of lines:
+### To get rid of the leading spaces:
 
 ```bash
-wc -l 1929/*.op | head --lines=-1 | cut -c 1-6
+wc --lines 1929/*.op | head --lines=-1 | sed 's/[ \t]*//'
 ```
 
 With output:
 
 ```
-    91
-    92
-    76
-    91
-    92
-    90
-   148
-    92
-   153
-    91
-   150
-   149
-    91
-    92
-    92
-    89
-    89
-    90
-    89
-    90
-    44
+91 1929/030050-99999-1929.op
+92 1929/030750-99999-1929.op
+76 1929/030910-99999-1929.op
+91 1929/031590-99999-1929.op
+92 1929/032620-99999-1929.op
+90 1929/033110-99999-1929.op
+148 1929/033790-99999-1929.op
+92 1929/033960-99999-1929.op
+153 1929/034970-99999-1929.op
+91 1929/036010-99999-1929.op
+150 1929/037770-99999-1929.op
+149 1929/037950-99999-1929.op
+91 1929/038040-99999-1929.op
+92 1929/038110-99999-1929.op
+92 1929/038560-99999-1929.op
+89 1929/038640-99999-1929.op
+89 1929/038940-99999-1929.op
+90 1929/039530-99999-1929.op
+89 1929/039730-99999-1929.op
+90 1929/039800-99999-1929.op
+44 1929/990061-99999-1929.op
+```
+
+### To get just the numbers representing the counts of lines:
+
+```bash
+wc --lines 1929/*.op | head --lines=-1 | sed 's/[ \t]*//' | cut --delimiter=" " --fields=1
+```
+
+With output:
+
+```
+91
+92
+76
+91
+92
+90
+148
+92
+153
+91
+150
+149
+91
+92
+92
+89
+89
+90
+89
+90
+44
 ```
 
 ### To get the minimum number of lines per file, maximum, median, and mean, you can rely on a small bit of R script. Create a file `summary.r` with the following contents:
@@ -187,7 +219,7 @@ chmod +x ./summary.r
 Install R if you don't have it already, then run:
 
 ```bash
-wc -l 1929/*.op | head --lines=-1 | cut -c 1-6 | ./summary.r
+wc --lines 1929/*.op | head --lines=-1 | sed 's/[ \t]*//' | cut --delimiter=" " --fields=1 | ./summary.r
 ```
 
 With output:
@@ -196,6 +228,18 @@ With output:
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
    44.0    90.0    91.0    99.1    92.0   153.0
 ```
+
+### To get these statistics for every year folder, from 1929 to 2017:
+
+```bash
+for year in {1929..2017}
+do
+    echo $year
+    wc --lines $year/*.op | head --lines=-1 | sed 's/[ \t]*//' | cut --delimiter=" " --fields=1 | ./summary.r
+done
+```
+
+With output in this [summary.txt](https://github.com/tothebeat/noaa-gsod-data-munging/blob/master/summary.txt) of the noaa-gsod-data-munging repo that this contributed to.
 
 ## References:
 
