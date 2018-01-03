@@ -3,12 +3,204 @@
 This will create a file `greetings.txt` with two lines in it, the first being `line 1` and the second being `line 2`:
 
 ```bash
-cat <<EOT >> greetings.txt
+cat <<EOT > greetings.txt
 line 1
 line 2
 EOT
 ```
 
+You can do a lot of calculations on text in files, and the text input and output of programs, without writing a script, using the GNU coreutils. Some useful ones:
+
+1. `wc` - Does a Word Count, in some interpretations.
+2. `cut` - Cuts a text string based on delimiters or specific character indexes.
+3. `head` - Gets the first lines of a file, based on offset from the start or end of the file.
+4. 
+
+To get the number of lines in a file `1929/032620-99999-1929.op` (a weather station's data for 1929):
+
+```bash
+wc -l 1929/032620-99999-1929.op
+```
+
+With output:
+
+```
+92 1929/032620-99999-1929.op
+```
+
+To get the number of files in a folder `1929`:
+
+```bash
+ls -1 1929 | wc -l
+```
+
+With output:
+
+```
+21
+```
+
+Where running:
+
+```bash
+ls -1 1929
+```
+
+Would have output:
+
+```
+030050-99999-1929.op
+030750-99999-1929.op
+030910-99999-1929.op
+031590-99999-1929.op
+032620-99999-1929.op
+033110-99999-1929.op
+033790-99999-1929.op
+033960-99999-1929.op
+034970-99999-1929.op
+036010-99999-1929.op
+037770-99999-1929.op
+037950-99999-1929.op
+038040-99999-1929.op
+038110-99999-1929.op
+038560-99999-1929.op
+038640-99999-1929.op
+038940-99999-1929.op
+039530-99999-1929.op
+039730-99999-1929.op
+039800-99999-1929.op
+990061-99999-1929.op
+```
+
+To get the line counts for each one of the files:
+
+```bash
+wc -l 1929/*.op
+```
+
+With output:
+
+```
+    91 1929/030050-99999-1929.op
+    92 1929/030750-99999-1929.op
+    76 1929/030910-99999-1929.op
+    91 1929/031590-99999-1929.op
+    92 1929/032620-99999-1929.op
+    90 1929/033110-99999-1929.op
+   148 1929/033790-99999-1929.op
+    92 1929/033960-99999-1929.op
+   153 1929/034970-99999-1929.op
+    91 1929/036010-99999-1929.op
+   150 1929/037770-99999-1929.op
+   149 1929/037950-99999-1929.op
+    91 1929/038040-99999-1929.op
+    92 1929/038110-99999-1929.op
+    92 1929/038560-99999-1929.op
+    89 1929/038640-99999-1929.op
+    89 1929/038940-99999-1929.op
+    90 1929/039530-99999-1929.op
+    89 1929/039730-99999-1929.op
+    90 1929/039800-99999-1929.op
+    44 1929/990061-99999-1929.op
+  2081 total
+```
+
+To get rid of this last line:
+
+```bash
+wc -l 1929/*.op | head --lines=-1
+```
+
+With output:
+
+```
+    91 1929/030050-99999-1929.op
+    92 1929/030750-99999-1929.op
+    76 1929/030910-99999-1929.op
+    91 1929/031590-99999-1929.op
+    92 1929/032620-99999-1929.op
+    90 1929/033110-99999-1929.op
+   148 1929/033790-99999-1929.op
+    92 1929/033960-99999-1929.op
+   153 1929/034970-99999-1929.op
+    91 1929/036010-99999-1929.op
+   150 1929/037770-99999-1929.op
+   149 1929/037950-99999-1929.op
+    91 1929/038040-99999-1929.op
+    92 1929/038110-99999-1929.op
+    92 1929/038560-99999-1929.op
+    89 1929/038640-99999-1929.op
+    89 1929/038940-99999-1929.op
+    90 1929/039530-99999-1929.op
+    89 1929/039730-99999-1929.op
+    90 1929/039800-99999-1929.op
+    44 1929/990061-99999-1929.op
+```
+
+To get just the numbers representing the counts of lines:
+
+```bash
+wc -l 1929/*.op | head --lines=-1 | cut -c 1-6
+```
+
+With output:
+
+```
+    91
+    92
+    76
+    91
+    92
+    90
+   148
+    92
+   153
+    91
+   150
+   149
+    91
+    92
+    92
+    89
+    89
+    90
+    89
+    90
+    44
+```
+
+To get the minimum number of lines per file, maximum, median, and mean, you can rely on a small bit of R script. Create a file `summary.r` with the following contents:
+
+```rscript
+#! /usr/bin/env Rscript
+d<-scan("stdin", quiet=TRUE)
+summary(d)
+```
+
+Make this script executable with:
+
+```bash
+chmod +x ./summary.r
+```
+
+Install R if you don't have it already, then run:
+
+```bash
+wc -l 1929/*.op | head --lines=-1 | cut -c 1-6 | ./summary.r
+```
+
+With output:
+
+```
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+   44.0    90.0    91.0    99.1    92.0   153.0
+```
+
 ## References:
 
-1. [How to append multiple lines to a file on UNIX StackExchange](https://unix.stackexchange.com/a/77278/107124)
+1. [How to append multiple lines to a file](https://unix.stackexchange.com/a/77278/107124)
+2. [How to Install R on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-r-on-ubuntu-16-04-2)
+3. [`cut` examples](https://en.wikipedia.org/wiki/Cut_(Unix)#Examples)
+4. [Creating the `summary.r` Rscript](https://unix.stackexchange.com/a/13775/107124)
+5. [Input/Output redirection in the shell](https://robots.thoughtbot.com/input-output-redirection-in-the-shell)
+6. [noaa-gsod-data-munging](https://github.com/tothebeat/noaa-gsod-data-munging)
