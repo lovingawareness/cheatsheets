@@ -2,13 +2,14 @@
 
 Some cheatsheets to help me keep track of what stuff means, and how to get myself into and out of pickles.
 
-* [shell](shell.md)
-* [vim](vim.md)
-* [tmux](tmux.md)
-* [screen](screen.md)
-* [node](node.md)
-* [express](express.md)
 * [django](django.md)
-* [postgresql](postgresql.md)
-* [Ubuntu](ubuntu.md)
+* [express](express.md)
+* [git](git.md)
 * [nginx](nginx.md)
+* [node](node.md)
+* [postgresql](postgresql.md)
+* [screen](screen.md)
+* [shell](shell.md)
+* [tmux](tmux.md)
+* [Ubuntu](ubuntu.md)
+* [vim](vim.md)
