@@ -26,3 +26,4 @@
 1. [How to Use Django & PostgreSQL for Full Text Search](https://gearheart.io/blog/how-to-use-django-postgresql-for-full-text-search/)
 1. [StackOverflow - How to use schemas in Django?](http://django-tenant-schemas.readthedocs.io/en/latest/)
 1. [Accessing multiple postgres schemas from Django](https://www.amvtek.com/blog/posts/2014/Jun/13/accessing-multiple-postgres-schemas-from-django/)
+1. [How to Create a Custom Django Middleware](https://simpleisbetterthancomplex.com/tutorial/2016/07/18/how-to-create-a-custom-django-middleware.html)
