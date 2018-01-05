@@ -14,6 +14,7 @@
 
 1. [Djangosnippets: Log all interactions with user to the DB](https://djangosnippets.org/snippets/2325/)
 1. [Django Girls Tutorial](https://tutorial.djangogirls.org/en/)
+1. [MDN Django Web Framework Tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django)
 1. [Django Haystack Best Practices](http://django-haystack.readthedocs.io/en/master/best_practices.html)
 1. [ElasticSearch with Django the easy way](https://medium.freecodecamp.org/elasticsearch-with-django-the-easy-way-909375bc16cb?gi=e30b14494a45)
 1. [Dockerizing Django, uWSGI, and Postgres The Serious Way](http://www.eidel.io/2017/07/10/dockerizing-django-uwsgi-postgres/)
