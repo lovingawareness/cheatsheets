@@ -35,7 +35,7 @@ $ python
 >>> os.getenv('DB_HOST')
 ```
 
-To get these variables available in your shell AND available in any programs you run from the shell (without using `sudo`), you have to use the [export]() function along with a command to get the variable names from the `.secrets` file:
+To get these variables available in your shell AND available in any programs you run from the shell (without using `sudo`), you have to use the [export](https://linuxconfig.org/learning-linux-commands-export) function along with a command to get the variable names from the `.secrets` file:
 
 ```bash
 source .secrets && export $(cut -d= -f1 .secrets)
@@ -290,3 +290,5 @@ With output in this [summary.txt](https://github.com/tothebeat/noaa-gsod-data-mu
 4. [Creating the `summary.r` Rscript](https://unix.stackexchange.com/a/13775/107124)
 5. [Input/Output redirection in the shell](https://robots.thoughtbot.com/input-output-redirection-in-the-shell)
 6. [noaa-gsod-data-munging](https://github.com/tothebeat/noaa-gsod-data-munging)
+7. [StackOverflow - How to export variables from a file?](https://unix.stackexchange.com/a/79065/107124)
+8. [Learning Linux Commands: export](https://linuxconfig.org/learning-linux-commands-export)
