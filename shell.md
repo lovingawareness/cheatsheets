@@ -9,6 +9,47 @@ line 2
 EOT
 ```
 
+## Exporting variables using text file
+
+Let's say you have a file called `.secrets` with the following variable settings:
+
+```bash
+DB_NAME=dbname
+DB_USER=root
+DB_PASS=fakepassword
+DB_HOST=databaseserver.com
+```
+
+You can do `source .secrets` to get those variables available in the shell:
+
+```bash
+$ echo $DB_HOST
+databaseserver.com
+```
+
+But then if you run a program like `python` those variables will not be available in the environment local to that program:
+
+```
+$ python
+>>> import os
+>>> os.getenv('DB_HOST')
+```
+
+To get these variables available in your shell AND available in any programs you run from the shell (without using `sudo`), you have to use the [export]() function along with a command to get the variable names from the `.secrets` file:
+
+```bash
+source .secrets && export $(cut -d= -f1 .secrets)
+```
+
+Then, when you go in to the python prompt again you'll be able to access the variables:
+
+```
+$ python
+>>> import os
+>>> os.getenv('DB_HOST')
+'databaseserver.com'
+```
+
 ## GNU coreutils - the swiss army knife of the shell
 
 You can do a lot of calculations on text in files, and the text input and output of programs, without writing a script, using the GNU coreutils. Some useful ones:
