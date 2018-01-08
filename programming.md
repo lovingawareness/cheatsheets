@@ -4,10 +4,19 @@
 
 ### Tutorials
 
-1. [TopCoder Data Science Tutorials](https://www.topcoder.com/community/data-science/data-science-tutorials/)
-1. [Linear Programming and Healthy Diets - Part 1](https://jeremykun.com/2014/06/02/linear-programming-and-the-most-affordable-healthy-diet-part-1/)
-1. [DataCamp](https://www.datacamp.com/)
+#### Programming Languages
+
 1. [Codecademy](https://www.codecademy.com/)
+
+#### Algorithms and Data Structures
+
+1. [TopCoder Data Science Tutorials](https://www.topcoder.com/community/data-science/data-science-tutorials/) - Not actually designed for "data science" as we use it popularly.
+1. [Linear Programming and Healthy Diets - Part 1](https://jeremykun.com/2014/06/02/linear-programming-and-the-most-affordable-healthy-diet-part-1/)
+1. [Algorithms Course at Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
+
+#### Data Science
+
+1. [DataCamp](https://www.datacamp.com/)
 
 ### Katas / Competition
 
