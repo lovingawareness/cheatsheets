@@ -25,3 +25,4 @@ I also find it befuddling to understand in other guides that `C-b` means holding
 1. [A Gentle Introduction to tmux](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340)
 1. [A Quick and Easy Guide to tmux](http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
 1. [Is there any way to redraw tmux window when switching smaller monitor to bigger one?](https://stackoverflow.com/a/7819465/1141603)
+1. [tmux Tutorial — Split Terminal Windows Easily](https://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily/)
