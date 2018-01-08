@@ -28,6 +28,7 @@
 #### Search Functionality
 
 1. [Django Haystack Best Practices](http://django-haystack.readthedocs.io/en/master/best_practices.html)
+1. [Django Haystack SearchField API Reference](http://django-haystack.readthedocs.io/en/master/searchfield_api.html)
 1. [ElasticSearch with Django the easy way](https://medium.freecodecamp.org/elasticsearch-with-django-the-easy-way-909375bc16cb?gi=e30b14494a45)
 1. [SyDjango - An introduction in setting up and using elastic](http://stuartdines.com/blog/sydjango-an-introduction-in-setting-up-and-using-elastic/)
 1. [The Best Django Haystack and Elasticsearch Tutorial](https://techstricks.com/django-haystack-and-elasticsearch-tutorial/)
