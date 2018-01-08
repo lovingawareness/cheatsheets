@@ -8,6 +8,7 @@ Some cheatsheets to help me keep track of what stuff means, and how to get mysel
 * [nginx](nginx.md)
 * [node](node.md)
 * [postgresql](postgresql.md)
+* [programming](programming.md)
 * [regularexpressions](regularexpressions.md)
 * [screen](screen.md)
 * [shell](shell.md)
