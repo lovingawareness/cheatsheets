@@ -36,3 +36,4 @@
 1. [How to Use Django & PostgreSQL for Full Text Search](https://gearheart.io/blog/how-to-use-django-postgresql-for-full-text-search/)
 1. [How to Create a Custom Django Middleware](https://simpleisbetterthancomplex.com/tutorial/2016/07/18/how-to-create-a-custom-django-middleware.html)
 1. [Django Haystack and Elasticsearch- part one](https://krzysztofzuraw.com/blog/2016/haystack-elasticsearch-part-one.html) (+ [part two](https://krzysztofzuraw.com/blog/2016/haystack-elasticsearch-part-two.html))
+1. [StackOverflow - Indexing and searching related objects with haystack](https://stackoverflow.com/questions/44768044/indexing-and-searching-related-objects-with-haystack)
