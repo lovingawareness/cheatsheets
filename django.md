@@ -10,6 +10,13 @@
 1. [`distinct()` method on Queryset object](https://docs.djangoproject.com/en/1.11/ref/models/querysets/#django.db.models.query.QuerySet.distinct)
 1. [Django reference on Postgres Full Text Search support](https://docs.djangoproject.com/en/1.11/ref/contrib/postgres/search/)
 
+### Related Modules
+
+1. [Django Packages Index](https://djangopackages.org/)
+1. [psycopg2](http://initd.org/psycopg/) - Support for PostgreSQL databases.
+1. [django-haystack](https://django-haystack.readthedocs.io/en/master/) - "Haystack provides modular search for Django. It features a unified, familiar API that allows you to plug in different search backends (such as Solr, Elasticsearch, Whoosh, Xapian, etc.) without having to modify your code."
+1. [django-debug-toolbar](https://github.com/jazzband/django-debug-toolbar) - "A configurable set of panels that display various debug information about the current request/response."
+
 ### Tutorials
 
 #### General
