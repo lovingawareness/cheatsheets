@@ -2,6 +2,7 @@
 
 Some cheatsheets to help me keep track of what stuff means, and how to get myself into and out of pickles.
 
+* [aws](aws.md)
 * [django](django.md)
 * [express](express.md)
 * [git](git.md)
