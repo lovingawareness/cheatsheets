@@ -9,6 +9,7 @@ Some cheatsheets to help me keep track of what stuff means, and how to get mysel
 * [node](node.md)
 * [postgresql](postgresql.md)
 * [programming](programming.md)
+* [python](python.md)
 * [regularexpressions](regularexpressions.md)
 * [screen](screen.md)
 * [shell](shell.md)
