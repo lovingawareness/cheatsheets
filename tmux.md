@@ -19,6 +19,7 @@ I also find it befuddling to understand in other guides that `C-b` means holding
 * `tmux attach-session -d` - This re-attaches to a session and disconnects any other viewers on the session, so if you're switching from a laptop with lower resolution/smaller screen to a desktop computer with a bigger screen, this will ensure you use all of the bigger screen real estate.
 * `tmux ls` - List existing tmux sessions.
 * `tmux attach-session -t 0` - Re-attach to tmux session 0. The session number is indicated on the left of each line listed with `tmux ls`.
+* `Ctrl+b, then $` - Renames the current tmux session. When you want to re-attach to the session, you'll see the session name you give it rather than the session number.
 
 ## References:
 
@@ -26,3 +27,4 @@ I also find it befuddling to understand in other guides that `C-b` means holding
 1. [A Quick and Easy Guide to tmux](http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
 1. [Is there any way to redraw tmux window when switching smaller monitor to bigger one?](https://stackoverflow.com/a/7819465/1141603)
 1. [tmux Tutorial — Split Terminal Windows Easily](https://lukaszwrobel.pl/blog/tmux-tutorial-split-terminal-windows-easily/)
+1. [How do I rename a session in tmux?](https://superuser.com/questions/428016/how-do-i-rename-a-session-in-tmux)
