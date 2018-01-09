@@ -82,6 +82,7 @@
 #### Glue for Web Apps
 
 1. [Gunicorn](http://gunicorn.org/) - "Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX. It's a pre-fork worker model. The Gunicorn server is broadly compatible with various web frameworks, simply implemented, light on server resources, and fairly speedy."
+1. [Whitenoise](http://whitenoise.evans.io/en/stable/index.html) - "Radically simplified static file serving for Python web apps."
 
 #### Databases / ORM (Object Relational Mapper)
 
