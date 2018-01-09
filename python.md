@@ -79,4 +79,11 @@
 1. [peewee](http://docs.peewee-orm.com/en/latest/)
 1. [Pony](https://ponyorm.com/)
 1. [Orator](https://orator-orm.com/)
+
+#### Web / Screen Scraping
+
+1. [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - "Beautiful Soup is a Python library designed for quick turnaround projects like screen-scraping."
+1. [Scrapy](https://scrapy.org/) - "An open source and collaborative framework for extracting the data you need from websites. In a fast, simple, yet extensible way."
+1. [Python bindings for Selenium](https://pypi.python.org/pypi/selenium) - [Selenium](http://www.seleniumhq.org/) is a web browser automation toolkit.
 1. 
+
