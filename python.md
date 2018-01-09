@@ -60,6 +60,16 @@
 1. [Munkres](http://software.clapper.org/munkres/) - Implementation of the [Munkres/Hungarian algorithm](https://en.wikipedia.org/wiki/Hungarian_algorithm) for assignment optimization problems.
 1. [PuLP](https://pythonhosted.org/PuLP/) - "It is used to describe optimisation problems as mathematical models. PuLP can then call any of numerous external LP solvers (CBC, GLPK, CPLEX, Gurobi etc) to solve this model and then use python commands to manipulate and display the solution."
 
+#### Data Analysis
+
+1. [pandas](https://pandas.pydata.org/) - Python Data Analysis Library
+1. [scipy](https://www.scipy.org/) - Includes pandas, [numpy](http://www.numpy.org/), [IPython](http://ipython.org/), the [scipy library](https://www.scipy.org/scipylib/index.html), [matplotlib](https://matplotlib.org/), and [SymPy](http://www.sympy.org/en/index.html)
+
+#### Alternative REPL
+
+1. [IPython](http://ipython.org/)
+1. [bpython](https://bpython-interpreter.org/)
+
 #### Network
 
 1. [requests](http://docs.python-requests.org/en/master/)
@@ -85,5 +95,4 @@
 1. [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - "Beautiful Soup is a Python library designed for quick turnaround projects like screen-scraping."
 1. [Scrapy](https://scrapy.org/) - "An open source and collaborative framework for extracting the data you need from websites. In a fast, simple, yet extensible way."
 1. [Python bindings for Selenium](https://pypi.python.org/pypi/selenium) - [Selenium](http://www.seleniumhq.org/) is a web browser automation toolkit.
-1. 
 
