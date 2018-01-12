@@ -7,6 +7,7 @@
 #### Programming Languages
 
 1. [Codecademy](https://www.codecademy.com/)
+1. [FreeCodeCamp](https://www.freecodecamp.org/)
 
 #### Algorithms and Data Structures
 
