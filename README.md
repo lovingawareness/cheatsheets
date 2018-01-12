@@ -18,3 +18,4 @@ Some cheatsheets to help me keep track of what stuff means, and how to get mysel
 * [tmux](tmux.md)
 * [Ubuntu](ubuntu.md)
 * [vim](vim.md)
+* [wordpress](wordpress.md)
