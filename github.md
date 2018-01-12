@@ -13,6 +13,8 @@
 
 ### Github Pages
 
+1. [Adding a Jekyll theme to your Github Pages site](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/)
+
 #### Themes
 
 1. [Dr. Jekyll's Themes](https://drjekyllthemes.github.io/)
