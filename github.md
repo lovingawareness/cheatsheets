@@ -10,3 +10,13 @@
 1. [How to create Task Lists / checkboxes](https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments)
 1. [Writing on Github](https://help.github.com/categories/writing-on-github/)
 1. [Github Flavored Markdown Spec](https://github.github.com/gfm/)
+
+### Github Pages
+
+#### Themes
+
+1. [Dr. Jekyll's Themes](https://drjekyllthemes.github.io/)
+1. [JekyllThemes.io](https://jekyllthemes.io/)
+1. [Poole](http://getpoole.com/)
+1. [Hyde](https://github.com/poole/hyde)
+1. [Lanyon](https://github.com/poole/lanyon)
