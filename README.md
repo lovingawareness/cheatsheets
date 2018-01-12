@@ -7,6 +7,7 @@ Some cheatsheets to help me keep track of what stuff means, and how to get mysel
 * [express](express.md)
 * [git](git.md)
 * [github](github.md)
+* [html](html.md)
 * [javascript](javascript.md)
 * [nginx](nginx.md)
 * [node](node.md)
