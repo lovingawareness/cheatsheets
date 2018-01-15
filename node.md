@@ -5,10 +5,12 @@
 1. `npm install <packagename>` - This installs a package from the [npmjs.com](https://www.npmjs.com/) package index, and saves the package name and version number to the `package.json` file (under `"dependencies"`) in the current directory.
 1. `npm search <package-search-query>` - Like if I want to search for packages with `munkres` in the name, I can do `npm search munkres` and get:
 
+   ```
     NAME                      | DESCRIPTION          | AUTHOR          | DATE       | VERSION  | KEYWORDS
     munkres-js                | Munkres (aka…        | =addaleax       | 2017-01-02 | 1.2.2    | assignment munkres hungarian
     hungarian-on3             | A hungarian…         | =mattkrick      | 2015-09-19 | 0.3.1    | Hungarian Munkres Kuhn assignment problem bipartite
     moresketchy               | A linted fork of…    | =wbern          | 2017-04-18 | 1.0.6    | sketchy shapecompare compare shapes 2d hungarian munkres
+   ```
 
 1. `npm install <packagename> --save-dev` - This installs the package in the current project folder, but also saves the package name and version in `package.json` in a different area (under `"devDependencies"`).
 
