@@ -13,6 +13,7 @@
    ```
 
 1. `npm install <packagename> --save-dev` - This installs the package in the current project folder, but also saves the package name and version in `package.json` in a different area (under `"devDependencies"`).
+1. `npm install how-to-npm -g && how-to-npm` - Gets you started with [an interactive tutorial](https://www.npmjs.com/package/how-to-npm) at the command line for npm and setting up a development environment.
 
 ## References:
 
