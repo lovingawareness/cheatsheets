@@ -2,7 +2,13 @@
 
 ## Commands and Files
 
+### Files
+
 1. `/proc/cpuinfo` - Contains info on the CPUs in the system. 
+
+### Commands
+
+1. `ln -s source target` - When a file exists in the `source` location and you want a shortcut/symbolic link to appear in a new location `target` that points to `source`, use this command.
 
 ## Cookbook
 
