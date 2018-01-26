@@ -1,5 +1,13 @@
 # shell cheatsheet
 
+## Commands and Files
+
+1. `/proc/cpuinfo` - Contains info on the CPUs in the system. 
+
+## Cookbook
+
+### Create multi-line file from shell
+
 This will create a file `greetings.txt` with two lines in it, the first being `line 1` and the second being `line 2`:
 
 ```bash
@@ -9,7 +17,7 @@ line 2
 EOT
 ```
 
-## Exporting variables using text file
+### Exporting variables using text file
 
 Let's say you have a file called `.secrets` with the following variable settings:
 
@@ -50,7 +58,7 @@ $ python
 'databaseserver.com'
 ```
 
-## GNU coreutils - the swiss army knife of the shell
+### GNU coreutils - the swiss army knife of the shell
 
 You can do a lot of calculations on text in files, and the text input and output of programs, without writing a script, using the GNU coreutils. Some useful ones:
 
@@ -59,7 +67,7 @@ You can do a lot of calculations on text in files, and the text input and output
 3. `head` - Gets the first lines of a file, based on offset from the start or end of the file.
 4. `sed` - Stream Editor, you can use regular expressions on lines of text.
 
-### To get the number of lines in a file `1929/032620-99999-1929.op` (a weather station's data for 1929):
+#### To get the number of lines in a file `1929/032620-99999-1929.op` (a weather station's data for 1929):
 
 ```bash
 wc --lines 1929/032620-99999-1929.op
@@ -71,7 +79,7 @@ With output:
 92 1929/032620-99999-1929.op
 ```
 
-### To get the number of files in a folder `1929`:
+#### To get the number of files in a folder `1929`:
 
 ```bash
 ls -1 1929 | wc --lines
@@ -115,7 +123,7 @@ Would have output:
 990061-99999-1929.op
 ```
 
-### To get the line counts for each one of the files:
+#### To get the line counts for each one of the files:
 
 ```bash
 wc --lines 1929/*.op
@@ -148,7 +156,7 @@ With output:
   2081 total
 ```
 
-### To get rid of this last line:
+#### To get rid of this last line:
 
 ```bash
 wc --lines 1929/*.op | head --lines=-1
@@ -179,7 +187,7 @@ With output:
     90 1929/039800-99999-1929.op
     44 1929/990061-99999-1929.op
 ```
-### To get rid of the leading spaces:
+#### To get rid of the leading spaces:
 
 ```bash
 wc --lines 1929/*.op | head --lines=-1 | sed 's/[ \t]*//'
@@ -211,7 +219,7 @@ With output:
 44 1929/990061-99999-1929.op
 ```
 
-### To get just the numbers representing the counts of lines:
+#### To get just the numbers representing the counts of lines:
 
 ```bash
 wc --lines 1929/*.op | head --lines=-1 | sed 's/[ \t]*//' | cut --delimiter=" " --fields=1
@@ -243,7 +251,7 @@ With output:
 44
 ```
 
-### To get the minimum number of lines per file, maximum, median, and mean, you can rely on a small bit of R script. Create a file `summary.r` with the following contents:
+#### To get the minimum number of lines per file, maximum, median, and mean, you can rely on a small bit of R script. Create a file `summary.r` with the following contents:
 
 ```rscript
 #! /usr/bin/env Rscript
@@ -270,7 +278,7 @@ With output:
    44.0    90.0    91.0    99.1    92.0   153.0
 ```
 
-### To get these statistics for every year folder, from 1929 to 2017:
+#### To get these statistics for every year folder, from 1929 to 2017:
 
 ```bash
 for year in {1929..2017}
@@ -292,3 +300,4 @@ With output in this [summary.txt](https://github.com/tothebeat/noaa-gsod-data-mu
 6. [noaa-gsod-data-munging](https://github.com/tothebeat/noaa-gsod-data-munging)
 7. [StackOverflow - How to export variables from a file?](https://unix.stackexchange.com/a/79065/107124)
 8. [Learning Linux Commands: export](https://linuxconfig.org/learning-linux-commands-export)
+9. [8 commands to check cpu information on Linux](http://www.binarytides.com/linux-cpu-information/)
