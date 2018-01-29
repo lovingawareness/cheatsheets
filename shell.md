@@ -26,7 +26,7 @@ EOT
 Alternately, you can append multiple lines to an existing file:
 
 ```bash
-sudo cat <<EOT >> /etc/hosts
+cat <<EOT >> newhosts
 127.0.0.1 localhost
 10.0.0.1 localhost
 EOT
