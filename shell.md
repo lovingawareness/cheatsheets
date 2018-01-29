@@ -23,6 +23,15 @@ line 2
 EOT
 ```
 
+Alternately, you can append multiple lines to an existing file:
+
+```bash
+sudo cat <<EOT >> /etc/hosts
+127.0.0.1 localhost
+10.0.0.1 localhost
+EOT
+```
+
 ### Exporting variables using text file
 
 Let's say you have a file called `.secrets` with the following variable settings:
