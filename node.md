@@ -21,6 +21,11 @@
 1. [npm official reference on package.json config file](https://docs.npmjs.com/files/package.json)
 1. [package.json: An Interactive Guide](http://browsenpm.org/package.json)
 1. [npmjs.com official package index](https://www.npmjs.com/)
+1. [The Anatomy of A Modern JavaScript Application](https://www.sitepoint.com/anatomy-of-a-modern-javascript-application/)
+1. [Server-side Programming and Node - Daniel Shiffman](http://shiffman.net/a2z/server-node/)
+1. [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+1. [Patterns For Large-Scale JavaScript Application Architecture](https://addyosmani.com/largescalejavascript/)
+1. [Deploying Node.js Apps on Heroku](https://devcenter.heroku.com/articles/deploying-nodejs)
 
 ### Tutorials
 
