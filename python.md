@@ -4,6 +4,7 @@
 
 1. [Python 3 Official Docs](https://docs.python.org/3/)
 1. [Searchable Python docs available on devdocs.io](http://devdocs.io/)
+1. [Awesome Python - A curated list of awesome Python frameworks, libraries, software and resources.](https://awesome-python.com/)
 
 ### Newsletters
 
