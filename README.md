@@ -10,6 +10,7 @@ Some cheatsheets to help me keep track of what stuff means, and how to get mysel
 * [github](github.md)
 * [html](html.md)
 * [javascript](javascript.md)
+* [macOS](macos.md)
 * [nginx](nginx.md)
 * [node](node.md)
 * [postgresql](postgresql.md)
