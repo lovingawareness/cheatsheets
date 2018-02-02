@@ -5,6 +5,7 @@
 ### Reference
 
 1. [Django 1.11 Reference](https://docs.djangoproject.com/en/1.11/contents/)
+1. [Django 1.11 and 2.0 on devdocs.io](https://devdocs.io)
 
 ### Object-Relational Model / Database Interface
 
