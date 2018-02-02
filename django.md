@@ -5,14 +5,16 @@
 ### Reference
 
 1. [Django 1.11 Reference](https://docs.djangoproject.com/en/1.11/contents/)
+1. [Django 2.0 Reference](https://docs.djangoproject.com/en/2.0/contents/)
 1. [Django 1.11 and 2.0 on devdocs.io](https://devdocs.io)
 
 ### Object-Relational Model / Database Interface
 
+1. [Django 2.0 Models with Field Types](https://docs.djangoproject.com/en/2.0/topics/db/models/)
 1. [Integrating Django with a legacy database](https://docs.djangoproject.com/en/1.11/howto/legacy-databases/)
 1. [Complex Lookups with Q objects](https://docs.djangoproject.com/en/1.11/topics/db/queries/#complex-lookups-with-q-objects)
 1. [`distinct()` method on Queryset object](https://docs.djangoproject.com/en/1.11/ref/models/querysets/#django.db.models.query.QuerySet.distinct)
-1. [Django reference on Postgres Full Text Search support](https://docs.djangoproject.com/en/1.11/ref/contrib/postgres/search/)
+1. [Django 2.0 reference on Postgres Full Text Search support](https://docs.djangoproject.com/en/2.0/ref/contrib/postgres/search/)
 
 ### Related Modules
 
