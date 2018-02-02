@@ -39,6 +39,7 @@
 1. [Deploy Django, Gunicorn, NGINX, Postgresql using Docker](http://ruddra.com/2016/08/14/docker-django-nginx-postgres/index.html)
 1. [StackOverflow - How to use schemas in Django?](http://django-tenant-schemas.readthedocs.io/en/latest/)
 1. [Accessing multiple postgres schemas from Django](https://www.amvtek.com/blog/posts/2014/Jun/13/accessing-multiple-postgres-schemas-from-django/)
+1. [Postgres Full-Text Search With Django](http://blog.lotech.org/postgres-full-text-search-with-django.html)
 
 #### Search Functionality
 
