@@ -29,6 +29,7 @@
 1. [Python - Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)
 1. [Python - lxml](http://lxml.de/)
 1. [Python - pyquery](https://pythonhosted.org/pyquery/)
+1. [Web Crawling Section of the Awesome Python repo](https://github.com/vinta/awesome-python#web-crawling)
 
 ### Anti-CAPTCHA Libraries / Services
 
