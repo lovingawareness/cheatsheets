@@ -25,6 +25,12 @@ postgres=# \q
 postgres=# \?
 ```
 
+### Showing results in non-table format
+
+```
+postgres=# \x
+```
+
 ### List all the tables in the `import` schema:
 
 ```
