@@ -12,6 +12,12 @@
 
 ## Cookbook
 
+### Find and remove files recursively
+
+To remove all files with a JPG extension in a given folder path, recursively:
+
+`find /folderpath -name '*.jpg' -exec rm {} \;`
+
 ### Create multi-line file from shell
 
 This will create a file `greetings.txt` with two lines in it, the first being `line 1` and the second being `line 2`:
