@@ -5,6 +5,7 @@
 * **Shift-Command (⌘)-3** - Take a screenshot of the entire screen, find the .PNG on your desktop.
 * **Shift-Command (⌘)-4** - Take a screenshot of a portion of the screen, find the .PNG on your desktop.
 * **Shift-Command (⌘)-4, Spacebar** - Take a screenshot of a window, cursor changes to a camera after pressing Spacebar, click on the window you want to screenshot, find the .PNG on your desktop.
+* **Control-Command (⌘)-Q** - Lock screen
 
 ## CLI Image Processing
 
@@ -19,3 +20,4 @@
 ## Sources
 
 * [How to take Screenshots in macOS](https://support.apple.com/en-us/HT201361)
+* [macOS Keyboard Shortcuts](https://support.apple.com/en-us/HT201236)
