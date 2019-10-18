@@ -9,6 +9,7 @@
 ### Commands
 
 1. `ln -s source target` - When a file exists in the `source` location and you want a shortcut/symbolic link to appear in a new location `target` that points to `source`, use this command.
+2. `file filename` - The `file` command guesses a file's type.
 
 ## Cookbook
 
