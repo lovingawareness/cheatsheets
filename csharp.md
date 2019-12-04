@@ -44,3 +44,17 @@ foreach ( var item in stuff )
   Console.WriteLine(String.Format("{0} (type: {1})", item, item.GetType()));
 }
 ```
+
+## Hashtables (dictionaries)
+
+```
+using System.Collections;
+Hashtable table = new Hashtable();
+table.Add("name", "Google");
+table.Add("URL", "https://www.google.com/");
+table.Add("date", DateTime.Now);
+foreach ( object key in table.Keys )
+{
+    Console.WriteLine(String.Format("table[{0}] = {1}", key, table[key]));
+}
+```
